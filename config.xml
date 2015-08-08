@@ -7,7 +7,7 @@
         version     = "1.0"
         versionCode = "10" >
         <!-- versionCode is optional and Android only -->
-        <preference name="phonegap-version" value="4.0.0" />
+        <preference name="phonegap-version" value="3.5.0" />
 
         <name>Phonegap back/menu/search Test</name>
         <description>Simple Test on back/menu/search buttons</description>

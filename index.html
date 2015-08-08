@@ -39,6 +39,13 @@
             document.addEventListener("menubutton", onMenuButton, false);
             document.addEventListener("searchbutton", onSearchButton, false);
         }
+		document.getElementById('content').innerHTML =
+        'device: ' + device.cordova + '<br />' +
+        'model: '  +  device.model + '<br />' +
+        'platform' +  device.platform + '<br />' +
+        'uuid'     + device.uuid + '<br />' + 
+        'version'  + device.version;
+
     }
     //
     function onLoad() {
@@ -54,11 +61,11 @@
 </div>
 
 <input id=theValue type=text placeholder="@data #1234!" /> <br />
-<div id=content style="margin:1em;">content</div>
 <button onclick='onButtonClick()' class="button button-pill button-action button-large">button</button>
 <pre id=info>pre</pre>
 <hr />
 <pre id=permInfo>permInfo</pre>
+<div id=content style="margin:1em;">content</div>
 
 <div class="copyright" style="padding:5px;align:left;font-style:italic;font-size:small;">
     <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2015</span>
